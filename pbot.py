@@ -17,7 +17,7 @@ START_BUTTON = InlineKeyboardMarkup(
     ) 
 @Developedbots.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
-    await update.reply_photo("https://telegra.ph/file/47d44ef6072f170652ef0.jpg")
+    await update.reply_sticker("CAACAgUAAxkBAAEBc9ZhseSqObRNz0hkzt5tMwNCrIHatQACogMAAhN2IVbvnoI55jUD2x4E")
     await update.reply_text(
         f""" Hai {update.from_user.mention} am just a pyrogram example bot""", 
         disable_web_page_preview=True,
